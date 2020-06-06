@@ -1,0 +1,129 @@
+body {
+  background-image: url('https://images.freeimages.com/images/large-previews/122/clouds-1188945.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+div {
+  width: 200px;
+  height: 100px;
+  background-image: url(https://i.ya-webdesign.com/images/clouds-illustration-png-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vis {
+  text-align: center;
+  font-family: candara;
+  color: darkslategrey;
+  animation: 5s linear forwards;
+  animation-name: text-change;
+  animation-duration: 14s;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  position: relative;
+
+}
+
+
+.hid {
+  text-align: center;
+  font-family: candara;
+  color: darkslategrey;
+  opacity:0;
+  animation-name: text-change;
+  animation-duration: 14s;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  position: relative;
+
+
+}
+.projects {
+  animation: 5s linear forwards;
+  animation-name: left-right;
+  animation-duration: 14s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+
+}
+.projects1 {
+  animation: 5s linear forwards;
+  animation-name: left-right;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+.projects2 {
+  animation: 5s linear forwards;
+  animation-name: left-right;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+}
+
+
+@keyframes text-change {
+  0% {
+    top: 20px;
+    opacity: 1;
+
+  }
+  20% {
+    top: 25px;
+  }
+  40% {
+    top: 35px;
+  }
+  60% {
+    top: 40px;
+  }
+  80% {
+    top: 50px;
+  }
+  100% {
+    top: 60px;
+    opacity: 0;
+
+  }
+}
+@keyframes left-right {
+  0% {
+    left: 0%;
+
+
+  }
+  20% {
+    left: 10%;
+  }
+  40% {
+    left: 20%;
+  }
+  60% {
+    left: 30%;
+  }
+  80% {
+    left: 40%;
+  }
+  100% {
+    left: 50%;
+
+
+  }
+}
