@@ -1,7 +1,14 @@
-body {
-  background-image: url('https://images.freeimages.com/images/large-previews/122/clouds-1188945.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+.vis {
+  text-align: center;
+  font-family: candara;
+  color: darkslategrey;
+  animation: 5s linear forwards;
+  animation-name: text-change;
+  animation-duration: 14s;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  position: relative;
 
 }
 
@@ -23,25 +30,10 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.vis {
-  text-align: center;
-  font-family: candara;
-  color: darkslategrey;
-  animation: 5s linear forwards;
-  animation-name: text-change;
-  animation-duration: 14s;
-  animation-timing-function: ease-in;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  position: relative;
-
-}
-
-
 .hid {
   text-align: center;
   font-family: candara;
-  color: darkslategrey;
+  color: black;
   opacity:0;
   animation-name: text-change;
   animation-duration: 14s;
@@ -62,19 +54,35 @@ h1 {
 
 
 }
-.projects1 {
-  animation: 5s linear forwards;
-  animation-name: left-right;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
-  position: relative;
-}
 .projects2 {
   animation: 5s linear forwards;
   animation-name: left-right;
   animation-duration: 8s;
   animation-fill-mode: forwards;
   position: relative;
+
+}
+.projects1 {
+  animation: 5s linear forwards;
+  animation-name: left-right;
+  animation-duration: 18s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+
+}
+body {
+  background-image: url('https://images.freeimages.com/images/large-previews/122/clouds-1188945.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.invisible {
+   animation-name: invisible;
+   animation-duration: 20s;
+  animation-fill-mode: forwards;
+  top:25vh;
 
 }
 
@@ -123,7 +131,34 @@ h1 {
   }
   100% {
     left: 50%;
+    top:25%;
 
 
   }
+
+}
+  @keyframes invisible {
+0% {
+    opacity: 1;
+
+
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+   opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+
+  }
+
 }
